@@ -157,7 +157,7 @@ ul {
 /* герой */
 .hero {
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--primari-hero-color);
 
@@ -262,7 +262,7 @@ ul {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
+  padding-top: 94px;
   margin-bottom: 50px;
 }
 .section-team {
