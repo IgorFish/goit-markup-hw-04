@@ -81,11 +81,47 @@ ul {
 .contacs {
   margin-left: auto;
   display: flex;
-  padding: 32px 0px 32px 0px;
 }
 
 .contakts-item-mail {
   margin-right: 50px;
+}
+
+.contakts-item-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  padding: 32px 0 32px 0;
+}
+
+.contakts-item-link:hover,
+.contakts-item-link:focus {
+  color: var(--accent-color);
+}
+/* значки почты и телефона */
+.mail::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("../images/envelope\ \(hover\).svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tel::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url("../images/smartphone.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* логотип*/
@@ -138,29 +174,28 @@ ul {
 }
 /* адрес телефон шапка */
 
-.contakts-item-link {
-  display: block;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-
-  /* outline: auto; */
-}
-
-.contakts-item-link:hover,
-.contakts-item-link:focus {
-  color: var(--accent-color);
-}
-
 /* герой */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   background-color: var(--primari-hero-color);
+
+  /* размер картинки и фон */
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   /* outline: 1px solid #f70404; */
 }
@@ -229,6 +264,31 @@ ul {
 .feutures-item:last-of-type {
   margin-right: 0px;
 }
+.feutures-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-size: 70px 0 70px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+.feutures-item:nth-child(1)::before {
+  background-image: url("../images/antenna.svg");
+}
+.feutures-item:nth-child(2)::before {
+  background-image: url("../images/clock.svg");
+}
+.feutures-item:nth-child(3)::before {
+  background-image: url("../images/diagram.svg");
+}
+.feutures-item:nth-child(4)::before {
+  background-image: url("../images/astronaut.svg");
+}
+
 /* чем занимаемся */
 
 .work {
@@ -305,6 +365,35 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.heading-clients {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* постоянные клиенты */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  height: 92px;
+  width: 170px;
+  outline: 1px solid tomato;
+}
+
 /* подвал */
 .footer {
   padding-top: 60px;
