@@ -6,6 +6,7 @@
   --primari-bg-color: #ffffff;
   --primari-hero-color: #2f303a;
   --section-team-button: #f5f4fa;
+  --project-gap: 30px;
 }
 body {
   background-color: var(--primari-bg-color);
@@ -373,21 +374,20 @@ ul {
   color: var(--primari-bg-color);
 }
 /* ссылки портфолио */
+
 .project {
   display: flex;
   flex-wrap: wrap;
+
+  padding: 0px;
+  margin: 0px;
+  margin-left: calc(-1 * var(--project-gap));
+  margin-top: calc(-1 * var(--project-gap));
 }
 .project-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.project-item:nth-child(3n + 3) {
-  margin-right: 0px;
-  margin-bottom: 30px;
-}
-.project-item:nth-child(n + 7) {
-  margin-bottom: 0px;
+  flex-basis: calc(100% / 3 - var(--project-gap));
+  margin-left: var(--project-gap);
+  margin-top: var(--project-gap);
 }
 
 .porjekt-section {
