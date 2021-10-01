@@ -264,6 +264,27 @@ ul {
 .feutures-item:last-of-type {
   margin-right: 0px;
 }
+
+.feutures-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--section-team-button);
+  border-radius: 4px;
+  outline: 1px solid tomato;
+}
+
+
+/* 546465465465446454654654 */
+/* .feutures-item {
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  outline: 1px solid tomato;
+} */
+
+
+
 /* .feutures-item::before {
   display: block;
   content: "";
@@ -275,8 +296,8 @@ ul {
   background-position: center;
   border-radius: 4px;
   background-color: #f5f4fa;
-} */
-/* .feutures-item:nth-child(1)::before {
+}
+.feutures-item:nth-child(1)::before {
   background-image: url("../images/antenna.svg");
 }
 .feutures-item:nth-child(2)::before {
