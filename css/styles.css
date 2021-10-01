@@ -264,7 +264,7 @@ ul {
 .feutures-item:last-of-type {
   margin-right: 0px;
 }
-.feutures-item::before {
+/* .feutures-item::before {
   display: block;
   content: "";
   height: 120px;
@@ -275,8 +275,8 @@ ul {
   background-position: center;
   border-radius: 4px;
   background-color: #f5f4fa;
-}
-.feutures-item:nth-child(1)::before {
+} */
+/* .feutures-item:nth-child(1)::before {
   background-image: url("../images/antenna.svg");
 }
 .feutures-item:nth-child(2)::before {
@@ -287,7 +287,7 @@ ul {
 }
 .feutures-item:nth-child(4)::before {
   background-image: url("../images/astronaut.svg");
-}
+} */
 
 /* чем занимаемся */
 
