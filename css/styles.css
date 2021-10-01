@@ -366,6 +366,27 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.icon-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 10px; */
+  border-radius: 22px;
+  height: 44px;
+  width: 44px;
+  /* background-color: var(--primary-white-color);
+    fill: var(--icon-background); */
+}
+
 .heading-clients {
   color: var(--title-text-color);
   font-weight: 700;
@@ -432,6 +453,36 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+.footer-address {
+  margin-right: 70px;
+}
+.foot {
+  display: flex;
+}
+
+.strong {
+  color: var(--primari-bg-color);
+  align-items: center;
+}
+
+.social-list {
+  display: flex;
+  margin-top: 20px;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-soc-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    height: 44px;
+    width: 44px;
+    /* fill: var(--primary-white-color); */
+    background-color: rgba(255, 255, 255, 0.1);
+
 /* секция портфолио */
 
 /* кнопки портфолио */
