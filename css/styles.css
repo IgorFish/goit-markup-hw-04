@@ -475,21 +475,21 @@ ul {
   margin-bottom: 20px;
 }
 
-.social-list {
+.footer-social-list {
   display: flex;
 }
-.social-item:not(:last-child) {
+.footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-link {
+.footer-social-link {
   display: flex;
   padding: 12px;
   fill: var(--primari-bg-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-.social-link:hover,
-.social-link:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   fill: var(--primari-bg-color);
   background-color: var(--accent-color);
 }
